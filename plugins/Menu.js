@@ -145,8 +145,10 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     
      let pp = 'https://telegra.ph/file/fb92e3eee0b432183891b.mp4'  /*https://telegra.ph/file/c2ed1c3a0895900836aca.mp4 fresh-bot*/ /* https://telegra.ph/file/8f642ba80b8cf7e1d0487.mp4 ?̷͖̬͖̝̫̺̬̼͗?̷̬̎̆?̸̰̩͍̪̤́́̂͆́͘͜?̷̭͔̞̹̤͎̖͐͛͊͋̀̊͝-̷͇͕͓̼̝̠̖̫̗̤̂̒B̶̨̰̱̠̙̟͌̒̉̆̏̎̍̕o̸̲̳͇͋͑͊ṱ̸̗̤̗̄̊̎̐̒̉͝*/
-     let pp2 = 'https://telegra.ph/file/b10828591bec86e8e7141.mp4' /*https://telegra.ph/file/8adf82315f2b226833c27.mp4 jotchua-bot*/ /*https://telegra.ph/file/e992e1777f60ff998df1a.mp4*/
-    conn.sendMessage(m.chat, { video: { url: [pp, pp2].getRandom() }, gifPlayback: true, caption: text.trim(), mentions: [m.sender] }, { quoted: m })
+     let pp2 = 'https://telegra.ph/file/b10828591bec86e8e7141.mp4'
+     let pp3 = 'https://telegra.ph/file/634fb6250a83ee8f208ba.mp4' /*https://telegra.ph/file/8adf82315f2b226833c27.mp4 jotchua-bot*/ /*https://telegra.ph/file/e992e1777f60ff998df1a.mp4*/
+     let pp4 = 'https://telegra.ph/file/64179489e7f1ac0d5c157.mp4'
+    conn.sendMessage(m.chat, { video: { url: [pp, pp2, pp3, pp4].getRandom() }, gifPlayback: true, caption: text.trim(), mentions: [m.sender] }, { quoted: m })
     
   } catch (e) {
     conn.reply(m.chat, '❎ Lo sentimos, el menú tiene un error.', m)
