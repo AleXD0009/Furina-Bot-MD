@@ -61,9 +61,9 @@ global.imagen5 = fs.readFileSync('./src/+18.jpg');
 global.imagen6 = fs.readFileSync('./Menu3.png');
 
 //━━━━━━━IMAGENES1.2━━━━━━━━━━━━ 
-global.imgPerfil = fs.readFileSync('./storage/img/perfil.png')
-global.imgRegistro = fs.readFileSync('./storage/img/registro.png')
-global.imgEliminarRegistro = fs.readFileSync('./storage/img/eliminar_registro.png')
+global.imgPerfil = fs.readFileSync('./storage/img/catalogo.png')
+global.imgRegistro = fs.readFileSync('./storage/img/catalogo.png')
+global.imgEliminarRegistro = fs.readFileSync('./storage/img/catalogo.png')
 //━━━━━━IMAGENES 2━━━━━━━━━━ 
 
 global.imgmenu = fs.readFileSync('./Menu3.png') 
@@ -81,7 +81,7 @@ global.desc = 'WhatsApp Bot Multi Device'
 
 global.group = 'https://chat.whatsapp.com/GR9pMnqYI8DB9HoJnl2HkB'
 //━━━━━━━MARCA━━━━━━━━ 
-global.estilo = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "5219992095479-1625305606@g.us" } : {}) }, message: { orderMessage: { itemCount : -999999, status: 1, surface : 1, message: '𝑱𝒐𝒕𝒄𝒉𝒖𝒂-𝑩𝒐𝒕-𝑴𝒊𝒏𝒊', orderTitle: 'Bang', thumbnail: catalogo, sellerJid: '0@s.whatsapp.net'}}}
+global.estilo = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "5219992095479-1625305606@g.us" } : {}) }, message: { orderMessage: { itemCount : -999999, status: 1, surface : 1, message: '𝐅𝐮𝐫𝐢𝐧𝐚-𝐁𝐨𝐭-𝐌𝐃', orderTitle: 'Bang', thumbnail: catalogo, sellerJid: '0@s.whatsapp.net'}}}
 global.fgif2 = { key: {participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "6289643739077-1613049930@g.us" } : {})},message: {"videoMessage": { "title":`${wm}`, "h": `Hmm`,'seconds': '99999', 'gifPlayback': 'true', 'caption': `${packname}\n      ${wm}`, 'jpegThumbnail': catalogo }}}
 
 //━━━━━━━━━━━━━━━━━━━━━━ 
