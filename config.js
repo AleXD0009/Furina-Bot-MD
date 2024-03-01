@@ -14,7 +14,7 @@ global.botnumber = "" //Ejemplo: +59309090909
 global.confirmCode = ""
 
 global.owner = [
-  ['5491141493818', '👑 𝑪𝒓𝒆𝒂𝒅𝒐𝒓 👑', true],
+  ['5491141493818', 'Creador ALS', true],
   ['5491156673266', '?', true],
 ];
 
@@ -39,14 +39,14 @@ global.version_language = '1.0 (MID-GB)'
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
 
 //━━━━━━━STICKERS━━━━━━━━━━━━ 
-global.packname = '𝑱𝒐𝒕𝒄𝒉𝒖𝒂-𝑩𝒐𝒕 | 𝑴𝑰𝑵𝑰';
+global.packname = '𝐅𝐮𝐫𝐢𝐧𝐚-𝐁𝐨𝐭-𝐌𝐃';
 global.author = '𝑩𝒚 𝑨𝑳𝑺';
 //━━━━━━━━━━━━━━━━━━━━━━ 
 
-global.wm = '𝑱𝒐𝒕𝒄𝒉𝒖𝒂-𝑩𝒐𝒕 | 𝑴𝑰𝑵𝑰';
-global.titulowm = '𝑱𝒐𝒕𝒄𝒉𝒖𝒂-𝑩𝒐𝒕 | 𝑴𝑰𝑵𝑰';
-global.titulowm2 = `𝑱𝒐𝒕𝒄𝒉𝒖𝒂-𝑩𝒐𝒕 | 𝑴𝑰𝑵𝑰`
-global.igfg = '𝑱𝒐𝒕𝒄𝒉𝒖𝒂-𝑩𝒐𝒕 | 𝑴𝑰𝑵𝑰';
+global.wm = '𝐅𝐮𝐫𝐢𝐧𝐚-𝐁𝐨𝐭-𝐌𝐃';
+global.titulowm = '𝐅𝐮𝐫𝐢𝐧𝐚-𝐁𝐨𝐭-𝐌𝐃';
+global.titulowm2 = `𝐅𝐮𝐫𝐢𝐧𝐚-𝐁𝐨𝐭-𝐌𝐃`
+global.igfg = '𝐅𝐮𝐫𝐢𝐧𝐚-𝐁𝐨𝐭-𝐌𝐃';
 //━━━━━ESPERAS━━━━━━━━ 
 global.wait = '*𝑪𝒂𝒓𝒈𝒂𝒏𝒅𝒐. ⏳*'; 
 global.waitt = '*𝑪𝒂𝒓𝒈𝒂𝒏𝒅𝒐.. ⏳*';
@@ -73,16 +73,9 @@ global.catalogo = fs.readFileSync('./storage/img/catalogo.png')
 global.thumbnail = fs.readFileSync('./Menu.png')
 
 
-
-/*global.gataMenu = [img, img2, img6, img7, img8, img9, img13, img14, img15, img17, img18]
-global.gataVidMenu = ['https://qu.ax/AAvg.mp4', 'https://qu.ax/SeFS.mp4', 'https://qu.ax/NqZN.mp4']
-global.gataImg = [imagen1, imagen2, imagen3, imagen4]*/
-// • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
-
   
 //━━━━━━━MARCA━━━━━━━━ 
 /*global.test = conn.sendMessage(m.chat, { image: { url: pp }, caption: str, contextInfo: { forwardingScore: 9999, externalAdReply: { showAdAttribution: true, title: packname, body: desc, sourceUrl: null, mediaType: 1, thumbnail: imgPerfil }}}*/
-
 
 global.desc = 'WhatsApp Bot Multi Device'
 
@@ -92,8 +85,8 @@ global.estilo = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(fa
 global.fgif2 = { key: {participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "6289643739077-1613049930@g.us" } : {})},message: {"videoMessage": { "title":`${wm}`, "h": `Hmm`,'seconds': '99999', 'gifPlayback': 'true', 'caption': `${packname}\n      ${wm}`, 'jpegThumbnail': catalogo }}}
 
 //━━━━━━━━━━━━━━━━━━━━━━ 
-global.addescargas = `𝑱𝒐𝒕𝒄𝒉𝒖𝒂-𝑩𝒐𝒕 | 𝑴𝑰𝑵𝑰 𝑩𝒚 𝑨𝑳𝑺`
-global.adimagen = `𝑱𝒐𝒕𝒄𝒉𝒖𝒂-𝑩𝒐𝒕 | 𝑴𝑰𝑵𝑰 𝑩𝒚 𝑨𝑳𝑺` 
+global.addescargas = `𝐅𝐮𝐫𝐢𝐧𝐚-𝐁𝐨𝐭-𝐌𝐃 𝑩𝒚 𝑨𝑳𝑺`
+global.adimagen = `𝐅𝐮𝐫𝐢𝐧𝐚-𝐁𝐨𝐭-𝐌𝐃 𝑩𝒚 𝑨𝑳𝑺` 
 
 //━━━━━━━━━━━━━━━━━━━━━━ 
 global.apikasu = "https://apikasu.onrender.com"
@@ -118,9 +111,9 @@ global.mes = d.toLocaleDateString('es', {month: 'long'});
 global.año = d.toLocaleDateString('es', {year: 'numeric'});
 global.tiempo = d.toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true});
 //* ****************************
-global.wm2 = `${dia} ${fecha}\n𝑱𝒐𝒕𝒄𝒉𝒖𝒂-𝑩𝒐𝒕-𝑴𝒊𝒏𝒊`;
-global.gt = '𝑱𝒐𝒕𝒄𝒉𝒖𝒂-𝑩𝒐𝒕-𝑴𝒊𝒏𝒊';
-global.mysticbot = '𝑱𝒐𝒕𝒄𝒉𝒖𝒂-𝑩𝒐𝒕-𝑴𝒊𝒏𝒊';
+global.wm2 = `${dia} ${fecha}\n𝐅𝐮𝐫𝐢𝐧𝐚-𝐁𝐨𝐭-𝐌𝐃`;
+global.gt = '𝐅𝐮𝐫𝐢𝐧𝐚-𝐁𝐨𝐭-𝐌𝐃';
+global.mysticbot = '𝐅𝐮𝐫𝐢𝐧𝐚-𝐁𝐨𝐭-𝐌𝐃';
 global.md = 'https://atom.bio/als';
 global.mysticbot = 'https://atom.bio/als';
 global.lolkey = 'Papah-Chan' //biar mudah ngegantinya semisal apikeynya expired:v
