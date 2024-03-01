@@ -1,5 +1,5 @@
 {
-  "name": "Jotchua-Mini",
+  "name": "Furina-Bot-MD",
   "version": "1.0.0",
   "description": "bot whatsapp",
   "main": "index.js",
@@ -18,16 +18,16 @@
     "eslint": "eslint .",
     "eslintfix": "eslint --fix ."
   },
-  "homepage": "https://github.com/AleXD0009/jotchua-mini",
+  "homepage": "https://github.com/AleXD0009/Furina-Bot-MD",
   "author": {
     "name": "AleXD0009"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AleXD0009/jotchua-mini.git"
+    "url": "git+https://github.com/AleXD0009/Furina-Bot-MD.git"
   },
   "bugs": {
-    "url": "https://github.com/AleXD0009/jotchua-mini/issues"
+    "url": "https://github.com/AleXD0009/Furina-Bot-MD/issues"
   },
   "license": "GPL-3.0-or-later",
   "dependencies": {
