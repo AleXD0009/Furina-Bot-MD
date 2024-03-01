@@ -7,7 +7,7 @@ let tags = {
   'main': 'INFO',
   'game': 'JUEGOS',
   'jadibot': 'SER SUBBOT',
-  'rpg': 'ECONOMIA` ',
+  'rpg': 'ECONOMIA',
   'rg': 'REGISTRO',
   'downloader': 'DESCARGAS',
   'stalkear' : 'STALKEAR' ,
