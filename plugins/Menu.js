@@ -50,7 +50,7 @@ Hola *%taguser*,
   header: '╔════%category╗\n║╭───────────────···',
   body: '║│ %cmd\n',
   footer: '║╰────────────────···\n╚══════════════════╝',
-  after: '> 𝑱 𝑶 𝑻 𝑪 𝑯 𝑼 𝑨 - 𝑴 𝑰 𝑵 𝑰\n> 𝑩𝒚 𝑨𝑳𝑺 \n © 2024 ALS | All rights reserved',
+  after: '> 𝐅𝐮𝐫𝐢𝐧𝐚-𝐁𝐨𝐭-𝐌𝐃\n> 𝑩𝒚 𝑨𝑳𝑺 \n © 2024 ALS | All rights reserved',
 }
 
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
@@ -155,8 +155,8 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     
-     let pp = 'https://telegra.ph/file/8adf82315f2b226833c27.mp4'  /*https://telegra.ph/file/c2ed1c3a0895900836aca.mp4 fresh-bot*/ /* https://telegra.ph/file/8f642ba80b8cf7e1d0487.mp4 ?̷͖̬͖̝̫̺̬̼͗?̷̬̎̆?̸̰̩͍̪̤́́̂͆́͘͜?̷̭͔̞̹̤͎̖͐͛͊͋̀̊͝-̷͇͕͓̼̝̠̖̫̗̤̂̒B̶̨̰̱̠̙̟͌̒̉̆̏̎̍̕o̸̲̳͇͋͑͊ṱ̸̗̤̗̄̊̎̐̒̉͝*/
-     let pp2 = 'https://telegra.ph/file/8adf82315f2b226833c27.mp4' /*https://telegra.ph/file/8adf82315f2b226833c27.mp4 jotchua-bot*/ /*https://telegra.ph/file/e992e1777f60ff998df1a.mp4*/
+     let pp = 'https://telegra.ph/file/fb92e3eee0b432183891b.mp4'  /*https://telegra.ph/file/c2ed1c3a0895900836aca.mp4 fresh-bot*/ /* https://telegra.ph/file/8f642ba80b8cf7e1d0487.mp4 ?̷͖̬͖̝̫̺̬̼͗?̷̬̎̆?̸̰̩͍̪̤́́̂͆́͘͜?̷̭͔̞̹̤͎̖͐͛͊͋̀̊͝-̷͇͕͓̼̝̠̖̫̗̤̂̒B̶̨̰̱̠̙̟͌̒̉̆̏̎̍̕o̸̲̳͇͋͑͊ṱ̸̗̤̗̄̊̎̐̒̉͝*/
+     let pp2 = 'https://telegra.ph/file/fb92e3eee0b432183891b.mp4' /*https://telegra.ph/file/8adf82315f2b226833c27.mp4 jotchua-bot*/ /*https://telegra.ph/file/e992e1777f60ff998df1a.mp4*/
     conn.sendMessage(m.chat, { video: { url: [pp, pp2].getRandom() }, gifPlayback: true, caption: text.trim(), mentions: [m.sender] }, { quoted: m })
     
   } catch (e) {
