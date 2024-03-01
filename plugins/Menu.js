@@ -4,25 +4,25 @@ import fetch from 'node-fetch'
 import { xpRange } from '../lib/levelling.js'
 
 let tags = {
-  'main': ' `INFO` ══════',
-  'game': '`JUEGOS` ═════',
-  'jadibot': '`SER SUBBOT`═════',
-  'rpg': ' `ECONOMIA` ══════',
-  'rg': ' `REGISTRO` ═════',
-  'downloader': ' `DESCARGAS` ════',
-  'stalkear' : ' `STALKEAR` ══════' ,
-  'ia' : ' IA ═══════' ,
-  'efectos' : 'EFECTOS Y LOGOS══════' ,
-  'nable': ' `ACTIVADORES` ═════',
-  'grupo' : '🌱 `GRUPOS` 🌱════' ,
-  'search': '═🔎`BUSCADORES`🔎════',
-  'img': '═🖼 `IMAGENES` 🖼═══',
-  'tools': '🛠HERRAMIENTAS🛠═══',
-  'fun': '═🎉DIVERSION🎉════',
-  'audio': 'EFECTOS DE AUDIO═════', 
-  'sticker': '🧸STICKERS🧸══════',
-  'nsfw': '🔞 NSFW 🔞══════',
-  'owner': '🐕 CREADOR 🐕═════',
+  'main': ' `INFO` ',
+  'game': '`JUEGOS` ',
+  'jadibot': '`SER SUBBOT` ',
+  'rpg': ' `ECONOMIA` ',
+  'rg': ' `REGISTRO` ',
+  'downloader': ' `DESCARGAS` ',
+  'stalkear' : ' `STALKEAR` ' ,
+  'ia' : ' IA ' ,
+  'efectos' : 'EFECTOS Y LOGOS ' ,
+  'nable': ' `ACTIVADORES` ',
+  'grupo' : ' `GRUPOS` ' ,
+  'search': ' `BUSCADORES` ',
+  'img': ' `IMAGENES` ',
+  'tools': ' HERRAMIENTAS ',
+  'fun': 'DIVERSION',
+  'audio': 'EFECTOS DE AUDIO', 
+  'sticker': 'STICKERS',
+  'nsfw': ' NSFW ',
+  'owner': ' CREADOR ',
 }
 
 const defaultMenu = {
@@ -36,9 +36,9 @@ Hola *%taguser*,
 ──────────────────────
 \t\t\t𝑪 𝑶 𝑴 𝑨 𝑵 𝑫 𝑶 𝑺
 `.trimStart(),
-  header: '╔════%category╗\n║╭───────────────···',
-  body: '║│ %cmd\n',
-  footer: '║╰────────────────···\n╚══════════════════╝',
+  header: '    %category\n╭───────────────···',
+  body: '│ %cmd\n',
+  footer: '╰────────────────···',
   after: '> 𝐅𝐮𝐫𝐢𝐧𝐚-𝐁𝐨𝐭-𝐌𝐃\n> 𝑩𝒚 𝑨𝑳𝑺 \n © 2024 ALS | All rights reserved',
 }
 
