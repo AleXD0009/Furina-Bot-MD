@@ -128,7 +128,7 @@ opcion = '1'
 if (!methodCodeQR && !methodCode && !fs.existsSync(`./${authFile}/creds.json`)) {
 do {
 let lineM = '⋯ ⋯ ⋯ ⋯ ⋯ ⋯ ⋯ ⋯ ⋯ ⋯ ⋯ 》'
-opcion = await question('[ 🐶 ] Seleccione una opción:\n1. Con código QR\n2. Con código de texto de 8 dígitos\n---> ')
+opcion = await question('[ 🔹 ] Seleccione una opción:\n1. Con código QR\n2. Con código de texto de 8 dígitos\n---> ')
 //if (fs.existsSync(`./${authFile}/creds.json`)) {
 //console.log(chalk.bold.redBright(`PRIMERO BORRE EL ARCHIVO ${chalk.bold.greenBright("creds.json")} QUE SE ENCUENTRA EN LA CARPETA ${chalk.bold.greenBright(authFile)} Y REINICIE.`))
 //process.exit()
@@ -141,7 +141,7 @@ const connectionOptions = {
 logger: pino({ level: 'silent' }),
 printQRInTerminal: opcion == '1' ? true : methodCodeQR ? true : false,
 mobile: MethodMobile, 
-browser: opcion == '1' ? ['Jotchua-Mini', 'Safari', '2.0.0'] : methodCodeQR ? ['Jotchua-Mini', 'Safari', '2.0.0'] : ['Ubuntu', 'Chrome', '110.0.5585.95'],
+browser: opcion == '1' ? ['Furina-Bot-MD', 'Safari', '2.0.0'] : methodCodeQR ? ['Furina-Bot-MD', 'Safari', '2.0.0'] : ['Ubuntu', 'Chrome', '110.0.5585.95'],
 auth: {
 creds: state.creds,
 keys: makeCacheableSignalKeyStore(state.keys, Pino({ level: "fatal" }).child({ level: "fatal" })),
@@ -193,7 +193,7 @@ rl.close()
         setTimeout(async () => {
             let codigo = await conn.requestPairingCode(numeroTelefono)
             codigo = codigo?.match(/.{1,4}/g)?.join("-") || codigo
-            console.log(chalk.yellow('[ 🐶 ] introduce el código de emparejamiento en WhatsApp.'));
+            console.log(chalk.yellow('[ 🔹 ] introduce el código de emparejamiento en WhatsApp.'));
             console.log(chalk.black(chalk.bgGreen(`Su código de emparejamiento: `)), chalk.black(chalk.white(codigo)))
         }, 3000)
 }}
@@ -201,7 +201,7 @@ rl.close()
 
 conn.isInit = false;
 conn.well = false;
-conn.logger.info(`[ 🐶 ] Cargando...\n`);
+conn.logger.info(`[ 🔹 ] Cargando...\n`);
 
 if (!opts['test']) {
   if (global.db) {
@@ -312,8 +312,8 @@ if (opcion == '1' || methodCodeQR) {
     console.log(chalk.yellow('Escanea el código QR.'));
  }}
    if (connection == 'open') {
-console.log(chalk.yellowBright('\n╭━─━━─━━─━─≪ 🐶 ≫─━─━━─━━─━╮\n│\n│Jotchua-Mini Conectado✅.\n│\n╰━─━━━─━━─━─≪ 🟢 ≫─━─━━─━━━─━╯\n'))
- await conn.groupAcceptInvite('GR9pMnqYI8DB9HoJnl2HkB');
+console.log(chalk.yellowBright('\n╭━─━━─━━─━─≪ 🔹 ≫─━─━━─━━─━╮\n│\n│Furina-Bot-MD Conectado✅.\n│\n╰━─━━━─━━─━─≪ 🟢 ≫─━─━━─━━━─━╯\n'))
+ await conn.groupAcceptInvite('F4L8yH7CipS5RWp5LXT0np');
    }
 let reason = new Boom(lastDisconnect?.error)?.output?.statusCode;
 if (reason == 405) {
@@ -383,14 +383,14 @@ global.reloadHandler = async function(restatConn) {
     conn.ev.off('creds.update', conn.credsUpdate);
   }
 
-  conn.welcome = '𝑯𝒐𝒍𝒂 @user 𝑩𝒊𝒆𝒏𝒗𝒆𝒏𝒊𝒅𝒐 𝒂   @subject';
-  conn.bye = '*  @user ꜱᴀʟɪᴏ ᴅᴇʟ ɢʀᴜᴘᴏ'; 
-  conn.spromote = '*@user ᴀʜᴏʀᴀ ᴇꜱ ᴀᴅᴍɪɴ*';
-  conn.sdemote = '*@user ʏᴀ ɴᴏ ᴇꜱ ᴀᴅᴍɪɴ😥*';
-  conn.sDesc = '*ꜱᴇ ᴍᴏᴅɪꜰɪᴄᴏ ʟᴀ ᴅᴇꜱᴄʀɪᴘᴄɪᴏɴ*';
-  conn.sSubject = '*ꜱᴇ ᴍᴏᴅɪꜰɪᴄᴏ ᴇʟ ɴᴏᴍʙʀᴇ ᴅᴇʟ ɢʀᴜᴘᴏ*';
-  conn.sIcon = '*ꜱᴇ ᴄᴀᴍʙɪᴏ ʟᴀ ꜰᴏᴛᴏ ᴅᴇʟ ɢʀᴜᴘᴏ.*';
-  conn.sRevoke = '*ᴇʟ ᴇɴʟᴀᴄᴇ ᴅᴇʟ ɢʀᴜᴘᴏ ꜰᴜᴇ ʀᴇꜱᴛᴀʙʟᴇᴄɪᴅᴏ*';
+  conn.welcome = '𝐇𝐨𝐥𝐚 @user 𝐁𝐢𝐞𝐧𝐯𝐞𝐧𝐢𝐝𝐨  𝐚 @subject'; 
+  conn.bye = '*  @user 𝐒𝐚𝐥𝐢𝐨 𝐃𝐞𝐥 𝐆𝐫𝐮𝐩𝐨 🔹'; 
+  conn.spromote = '@user 𝐀𝐡𝐨𝐫𝐚 𝐞𝐬 𝐚𝐝𝐦𝐢𝐧 🔹';
+  conn.sdemote = '@user 𝐘𝐚 𝐍𝐨 𝐄𝐬  𝐀𝐝𝐦𝐢𝐧 🔹';
+  conn.sDesc = '𝐒𝐞  𝐌𝐨𝐝𝐢𝐟𝐢𝐜𝐨 𝐋𝐚 𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐜𝐢𝐨𝐧 🔹';
+  conn.sSubject = '𝐒𝐞 𝐌𝐨𝐝𝐢𝐟𝐢𝐜𝐨 𝐄𝐥 𝐍𝐨𝐦𝐛𝐫𝐞 𝐃𝐞𝐥 𝐆𝐫𝐮𝐩𝐨 🔹';
+  conn.sIcon = '𝐒𝐞 𝐂𝐚𝐦𝐛𝐢𝐨 𝐋𝐚 𝐅𝐨𝐭𝐨 𝐃𝐞𝐥 𝐆𝐫𝐮𝐩𝐨 🔹';
+  conn.sRevoke = '𝐄𝐥 𝐄𝐧𝐥𝐚𝐜𝐞 𝐃𝐞𝐥 𝐆𝐫𝐮𝐩𝐨 𝐒𝐞  𝐑𝐞𝐬𝐭𝐚𝐛𝐥𝐞𝐜𝐢𝐨 🔹';
 
   conn.handler = handler.handler.bind(global.conn);
   conn.participantsUpdate = handler.participantsUpdate.bind(global.conn);
@@ -544,7 +544,7 @@ setInterval(async () => {
   if (stopped === 'close' || !conn || !conn.user) return;
   const _uptime = process.uptime() * 1000;
   const uptime = clockString(_uptime);
-  const bio = `𝑱𝒐𝒕𝒄𝒉𝒖𝒂-𝑩𝒐𝒕-𝑴𝒊𝒏𝒊 | 𝑻𝒊𝒆𝒎𝒑𝒐 𝑨𝒄𝒕𝒊𝒗𝒐: ${uptime}`;
+  const bio = `💫 𝐅𝐮𝐫𝐢𝐧𝐚-𝐁𝐨𝐭-𝐌𝐃 | ⌛ 𝑻𝒊𝒆𝒎𝒑𝒐 𝑨𝒄𝒕𝒊𝒗𝒐: ${uptime}`;
   await conn.updateProfileStatus(bio).catch((_) => _);
 }, 60000);
 function clockString(ms) {
