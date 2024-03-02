@@ -53,7 +53,7 @@ const handler = async (m, { conn, text }) => {
         let spotifyi = `*• 💽 Spotify playlist •*\n\n`
           spotifyi += `	◦  *Playlist:* ${playlistInfoByID.name}\n`
           spotifyi += `	◦  *Tracks totales:* ${tracks.length}\n\n`
-          spotifyi += `Los audios de la playlist se están enviando, espere un momento..`
+          spotifyi += `Los audios de la playlist se están enviando, espere un momento...`
         await conn.sendMessage(m.chat, {text: spotifyi.trim(), contextInfo: {forwardingScore: 9999999, isForwarded: true, "externalAdReply": {"showAdAttribution": true, "containsAutoReply": true, "renderLargerThumbnail": true, "title": global.titulowm2, "containsAutoReply": true, "mediaType": 1, "thumbnail": img, "thumbnailUrl": img, "mediaUrl": playlistInfoByID.external_urls.spotify, "sourceUrl": playlistInfoByID.external_urls.spotify}}}, {quoted: m});
           let target = m.chat;
           if (m.isGroup && tracks.length > 20) {
