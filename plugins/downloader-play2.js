@@ -11,7 +11,7 @@ let limit2 = 400;
 let limit_a1 = 50;
 let limit_a2 = 400;
 const handler = async (m, {conn, command, args, text, usedPrefix}) => {
-  if (!text) throw `𝑰𝒏𝒈𝒓𝒆𝒔𝒂 𝒆𝒍 𝒏𝒐𝒎𝒃𝒓𝒆 𝒅𝒆 𝒖𝒏𝒂 𝒄𝒂𝒏𝒄𝒊𝒐𝒏,\n\n[🐶] 𝒆𝒋𝒆𝒎𝒑𝒍𝒐:${usedPrefix + command} 8 - YSY A - NO NEGOCIO CON MI ALMA (PROD. ONIRIA) `;
+  if (!text) throw `Ingresa el nombre de una cancion\nEjemplo::${usedPrefix + command} 8 - YSY A - NO NEGOCIO CON MI ALMA (PROD. ONIRIA) `;
   try {
     const yt_play = await search(args.join(' '));
     let additionalText = '';
@@ -21,10 +21,6 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
       additionalText = 'video 🎥';
     }
     const texto1 = `
-┏─━─━─━∞◆∞━─━─━─┓
-│ *𝒀𝒐𝒖𝒕𝒖𝒃𝒆 𝑷𝒍𝒂𝒚*│
-┗─━─━─━∞◆∞━─━─━─┛
-
 ┏─━─━─━∞◆∞━─━─━─┓
 │➻ 📌 *Titulo:* 
 │➻ ${yt_play[0].title}
@@ -67,7 +63,7 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
     const fileSizeInMB = fileSizeInKB / 1024;
     const size = fileSizeInMB.toFixed(2);    
     if (size >= limit_a2) {  
-    await conn.sendMessage(m.chat, {text: `*[ 🐶 ] 𝑫𝒆𝒔𝒄𝒂𝒓𝒈𝒖𝒆 𝒔𝒖 𝒂𝒖𝒅𝒊𝒐 𝒆𝒏 ${dl_url}*`}, {quoted: m});
+    await conn.sendMessage(m.chat, {text: `*Descargue su audio en ${dl_url}*`}, {quoted: m});
     return;    
     }     
     if (size >= limit_a1 && size <= limit_a2) {  
