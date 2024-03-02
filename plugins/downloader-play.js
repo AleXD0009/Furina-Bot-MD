@@ -6,7 +6,7 @@ import fetch from 'node-fetch'
 let handler = async (m, { conn, args, usedPrefix, text, command }) => {
 let lister = ["mp3", "yta", "audio", "ytv", "video", "vídeo", "mp4", "mp3doc", "ytadoc", "audiodoc", "mp4doc", "ytvdoc", "videodoc", "vídeodoc"]
     let [feature, inputs, inputs_, inputs__, inputs___] = text.split(" ")
-    if (!lister.includes(feature)) return conn.reply(m.chat, `🚩 𝑰𝒏𝒈𝒓𝒆𝒔𝒂 𝒆𝒍 𝒇𝒐𝒓𝒎𝒂𝒕𝒐 𝒆𝒏 𝒒𝒖𝒆 𝒅𝒆𝒔𝒆𝒂𝒔 𝒅𝒆𝒔𝒄𝒂𝒓𝒈𝒂𝒓 𝒎á𝒔 𝒆𝒍 𝒕𝒊𝒕𝒖𝒍𝒐 𝒅𝒆 𝒖𝒏 𝒗𝒊𝒅𝒆𝒐 𝒐 𝒎𝒖𝒔𝒊𝒄𝒂 𝒅𝒆 𝒀𝒐𝒖𝑻𝒖𝒃𝒆.*\n\n[ 🐶 ] 𝑬𝒋𝒆𝒎𝒑𝒍𝒐 : ${usedPrefix + command} *mp3* SUICIDAL-IDOL - ecstacy\n\n𝑭𝒐𝒓𝒎𝒂𝒕𝒐𝒔 𝒅𝒊𝒔𝒑𝒐𝒏𝒊𝒃𝒍𝒆𝒔 :\n${usedPrefix + command} *mp3*\n${usedPrefix + command} *mp3doc*\n${usedPrefix + command} *mp4*\n${usedPrefix + command} *mp4doc*`, m)
+    if (!lister.includes(feature)) return conn.reply(m.chat, `🚩 𝑰𝒏𝒈𝒓𝒆𝒔𝒂 𝒆𝒍 𝒇𝒐𝒓𝒎𝒂𝒕𝒐 𝒆𝒏 𝒒𝒖𝒆 𝒅𝒆𝒔𝒆𝒂𝒔 𝒅𝒆𝒔𝒄𝒂𝒓𝒈𝒂𝒓 𝒎á𝒔 𝒆𝒍 𝒕𝒊𝒕𝒖𝒍𝒐 𝒅𝒆 𝒖𝒏 𝒗𝒊𝒅𝒆𝒐 𝒐 𝒎𝒖𝒔𝒊𝒄𝒂 𝒅𝒆 𝒀𝒐𝒖𝑻𝒖𝒃𝒆.*\n\n𝑬𝒋𝒆𝒎𝒑𝒍𝒐 : ${usedPrefix + command} *mp3* SUICIDAL-IDOL - ecstacy\n\n𝑭𝒐𝒓𝒎𝒂𝒕𝒐𝒔 𝒅𝒊𝒔𝒑𝒐𝒏𝒊𝒃𝒍𝒆𝒔 :\n${usedPrefix + command} *mp3*\n${usedPrefix + command} *mp3doc*\n${usedPrefix + command} *mp4*\n${usedPrefix + command} *mp4doc*`, m)
     if (lister.includes(feature)) {
        if (feature == "mp3" || feature == "yta" || feature == "audio") {
             if (!inputs) return conn.reply(m.chat, `*🚩 𝑰𝒏𝒈𝒓𝒆𝒔𝒂 𝒆𝒍 𝒕𝒊𝒕𝒖𝒍𝒐 𝒅𝒆 𝒖𝒏 𝒗𝒊𝒅𝒆𝒐 𝒐 𝒎𝒖𝒔𝒊𝒄𝒂 𝒅𝒆 𝒀𝒐𝒖𝑻𝒖𝒃𝒆.*`, m)
