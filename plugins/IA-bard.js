@@ -2,7 +2,7 @@ import fetch from 'node-fetch';
 
 const handler = async (m, { conn, text }) => {
   if (!text) {
-    throw '[📚] 𝑷𝒓𝒐𝒑𝒐𝒓𝒄𝒊𝒐𝒏𝒂 𝒖𝒏 𝒕𝒆𝒙𝒕𝒐 \n\n*[💡] 𝑬𝒋𝒆𝒎𝒑𝒍𝒐: .bard Hola Bard, ¿cómo estás?';
+    throw 'Proporciona un texto \nEjemplo: .bard Hola Bard, ¿cómo estás?';
   }
 
   try {
@@ -14,7 +14,7 @@ const handler = async (m, { conn, text }) => {
 
     if (data.result) {
       m.reply(`
-> 𝑩 𝑨 𝑹 𝑫  𝑨𝑰
+> BARD AI
 
 ${data.result}`);
     } else {
