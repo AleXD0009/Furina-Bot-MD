@@ -1,5 +1,5 @@
 const handler = async (m, {conn, args, usedPrefix, command}) => {
-  if (!args[0]) throw `*Ingresa el nombre de un usuario*\n\n*𝙴𝙹𝙴𝙼𝙿𝙻𝙾:*\n*${usedPrefix + command} Illenium*`;
+  if (!args[0]) throw `*Ingresa el nombre de un usuario*\nEjemplo:*${usedPrefix + command} Illenium*`;
   await m.reply(global.wait);
   const res = await fetch(`https://api.lolhuman.xyz/api/igstory/${args[0]}?apikey=${lolkeysapi}`);
   const anu = await res.json();
