@@ -45,3 +45,4 @@ export default handler;
 const getRandom = (ext) => {
   return `${Math.floor(Math.random() * 10000)}${ext}`;
 };
+
